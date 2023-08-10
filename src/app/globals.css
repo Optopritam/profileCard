@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* YourComponentStyles.css */
+@layer utilities {
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.25;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    75% {
+      opacity: 0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .h-104 {
+    height: 26rem;
+  }
+  
+}
