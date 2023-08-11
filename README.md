@@ -41,8 +41,5 @@ The project has been deployed on Vercel. You can access the profile card collect
 
 This project focuses on creating profile card sections for various anime characters. The profile cards showcase information about each character from anime, allowing viewers to explore different anime members and their details.
 
-## Deployment
-
-The project has been deployed on Vercel. You can access the profile card collection using the following link: [Anime Profile Cards](https://profile-card-five-liard.vercel.app/)
 
 
