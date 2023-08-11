@@ -46,9 +46,4 @@ Feel free to explore the profiles of different anime characters and enjoy the wo
 
 Contributions to this project are welcome! If you'd like to add more anime character profiles, enhance the design, or make any improvements, please feel free to submit a pull request.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Please replace `LICENSE` with the actual name of the license file you are using for your project. This formatted README.md provides a clear and organized overview of your Next.js project, how to run it locally, its purpose, deployment, contribution guidelines, and licensing information.
