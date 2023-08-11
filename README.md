@@ -31,10 +31,7 @@ Running a Next.js app involves several steps. Next.js is a popular React framewo
 
 That's it! These steps need to be performed to create your Next.js app and the necessary files are provided. You can now start working on your app and make changes as required.
 
-## Project Description
-
-This project focuses on creating profile card sections for various anime characters. The profile cards showcase information about each character from anime, allowing viewers to explore different anime members and their details.
-
+ 
 ## Deployment
 
 The project has been deployed on Vercel. You can access the profile card collection using the following link: [Anime Profile Cards](https://profile-card-five-liard.vercel.app/)
