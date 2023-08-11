@@ -1,3 +1,6 @@
+Running a Next.js app involves several steps. Next.js is a popular React framework for building server-rendered and statically-generated web applications. Here's a general guide on how to run a Next.js app:
+Of course! If you've already created a Next.js app and want a streamlined version of the steps to run it, here's what you need to do:
+
 This is a [Next.js] (https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 
@@ -6,10 +9,7 @@ This is a [Next.js] (https://nextjs.org/) project bootstrapped with [`create-nex
 
 ## Deployed on Vercel
 
-Kindly utilize the provided hyperlink to access the profile card: (https://profile-card-five-liard.vercel.app/)
-
-Running a Next.js app involves several steps. Next.js is a popular React framework for building server-rendered and statically-generated web applications. Here's a general guide on how to run a Next.js app:
-Of course! If you've already created a Next.js app and want a streamlined version of the steps to run it, here's what you need to do:
+Kindly utilize the provided hyperlink to access the profile card: (https://profile-card-five-liard.vercel.app/
 
 #Steps to run on the local host
 
