@@ -1,4 +1,3 @@
-Sure, I can help you format the provided information into a well-structured README.md file for your GitHub repository. Here's the formatted version:
 
 ```markdown
 # Anime Profile Card Project
