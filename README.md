@@ -39,30 +39,6 @@ This project focuses on creating profile card sections for various anime charact
 
 The project has been deployed on Vercel. You can access the profile card collection using the following link: [Anime Profile Cards](https://profile-card-five-liard.vercel.app/)
 
-Feel free to explore the profiles of different anime characters and enjoy the world of anime!
-
-## Contributing
-
-Contributions to this project are welcome! If you'd like to add more anime character profiles, enhance the design, or make any improvements, please submit a pull request.
-
-
-2. **Install Dependencies:**
-   
-   ```bash
-   npm install
-   ```
-   
-3. **Run the Development Server:**
-   To run your Next.js app in development mode, use the following command:
-   
-   ```bash
-   npm run dev
-   ```
-
-4. **Access Your App:**
-   Open a web browser and navigate to `http://localhost:3000` to see your Next.js app in action.
-
-That's it! These steps need to be performed to create your Next.js app and the necessary files are provided. You can now start working on your app and make changes as required.
 
 ## Project Description
 
