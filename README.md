@@ -29,7 +29,7 @@ Running a Next.js app involves several steps. Next.js is a popular React framewo
 4. **Access Your App:**
    Open a web browser and navigate to `http://localhost:3000` to see your Next.js app in action.
 
-That's it! These steps assume that you have already created your Next.js app and have the necessary files in place. You can now start working on your app and make changes as needed.
+That's it! These steps need to be performed to create your Next.js app and the necessary files are provided. You can now start working on your app and make changes as required.
 
 ## Project Description
 
@@ -43,6 +43,6 @@ Feel free to explore the profiles of different anime characters and enjoy the wo
 
 ## Contributing
 
-Contributions to this project are welcome! If you'd like to add more anime character profiles, enhance the design, or make any improvements, please feel free to submit a pull request.
+Contributions to this project are welcome! If you'd like to add more anime character profiles, enhance the design, or make any improvements, please submit a pull request.
 
 
