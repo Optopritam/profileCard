@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Inter } from "next/font/google"; // Import the Inter font
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +12,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+       {/* Link to external stylesheet for colored icons */}
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/gh/dheereshagrwal/colored-icons@1.6.1/ci.min.css"
         />
       </head>
+       {/* Render the children (content) */}
       <body className={`${inter.className} bg-zinc-900`}>{children}</body>
     </html>
   );

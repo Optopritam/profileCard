@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/solid";
 import { useState } from "react";
 import Modal from "./components/Modal";
+
 const applications = [
   {
     applicant: {
@@ -51,7 +52,8 @@ const applications = [
       name: "Sanji Vinsmoke",
       email: "sanji@example.com",
       telephone: "555-555-5555",
-      bio: "I'm a chef and a member of the Straw Hat Pirates, searching for All Blue",
+      bio:
+        "I'm a chef and a member of the Straw Hat Pirates, searching for All Blue",
       imageUrl:
         "https://i.pinimg.com/originals/ad/83/67/ad8367f0ef5e6f02b0ba140131ca2eea.jpg",
     },
@@ -65,15 +67,21 @@ export default function Example() {
   const [selectedApplication, setSelectedApplication] = useState(
     applications[0]
   );
+
   const handleLinkClick = (application) => {
     setSelectedApplication(application);
   };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center gap-10 m-10">
+      {/* Modal component displaying information about the selected application */}
       <Modal application={selectedApplication} />
+
+      {/* List of applications displayed on the right */}
       <div className="bg-white shadow overflow-hidden sm:rounded-md">
+        {/* Unordered list with gray divider between each item */}
         <ul role="list" className="divide-y divide-gray-200 h-64 overflow-auto">
+          {/* Mapping each application to a list item */}
           {applications.map((application) => (
             <li
               key={application.applicant.email}
@@ -81,8 +89,11 @@ export default function Example() {
                 selectedApplication === application ? "bg-gray-300" : ""
               }`}
             >
+              {/* Calling handleLinkClick function when the list item is clicked */}
               <div onClick={() => handleLinkClick(application)}>
+                {/* Flex container with centered and evenly spaced items */}
                 <div className="flex items-center justify-evenly px-4 py-4 sm:px-6">
+                  {/* Left part of the list item containing the applicant's image */}
                   <div className="flex-1 flex items-center">
                     <div>
                       <img
@@ -91,6 +102,7 @@ export default function Example() {
                         alt=""
                       />
                     </div>
+                    {/* Right part of the list item containing the applicant's name and email */}
                     <div className="px-4">
                       <div>
                         <p className="text-sm font-medium text-indigo-600 truncate">
@@ -107,12 +119,6 @@ export default function Example() {
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <ChevronRightIcon
-                      className="h-5 w-5 text-gray-400"
-                      aria-hidden="true"
-                    />
                   </div>
                 </div>
               </div>
