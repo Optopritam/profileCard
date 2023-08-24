@@ -1,25 +1,25 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
 import nameToEmail from "../utils/nameToEmail";
-// This is a Modal component that takes in an application object as a prop
+// This is a Modal component that takes in an cat array as a prop
 const Modal = ({ cat }) => {
   return (
     /* The modal is a flex container with a column direction and a fixed width */
     <div
       className={`animate-fade-in flex flex-col md:w-96 md:h-104 border text-center bg-white rounded-2xl divide-y divide-gray-200`}
     >
-      {/* The top part of the modal contains the applicant's image, name, bio, title, and role */}
+      {/* The top part of the modal contains the cat's image, name, bio, title, and role */}
       <div className="flex-1 flex flex-col p-8">
-        {/* The applicant's image is displayed as a circle with a shadow effect */}
+        {/* The cat's image is displayed as a circle with a shadow effect */}
         <img
           className={`w-32 h-32 mx-auto rounded-full shadow-xl object-cover `}
           src={cat.image_link}
           alt=""
         />
-        {/* The applicant's name is displayed below the image in a larger font size */}
+        {/* The cat's name is displayed below the image in a larger font size */}
         <h3 className="mt-8 md:mt-12 text-gray-900 font-semibold text-lg">
           {cat.name}
         </h3>
-        {/* The applicant's bio is displayed below their name in a smaller font size */}
+        {/* The cat's bio is displayed below their name in a smaller font size */}
         <p className="text-sm mt-1 flex-col">Shedding: {cat.shedding}, General_health: {cat.general_health}, Playfulness: {cat.playfulness} </p>
         {/* The application title and role are displayed in a definition list */}
         <dl className="mt-1 flex flex-col justify-between">
@@ -36,11 +36,11 @@ const Modal = ({ cat }) => {
           </dd>
         </dl>
       </div>
-      {/* The bottom part of the modal contains buttons for contacting the applicant via email, phone, or LinkedIn */}
+      {/* The bottom part of the modal contains buttons for contacting the cat via email, phone, or LinkedIn */}
       <div>
         {/* The buttons are displayed in a row using flexbox */}
         <div className="flex divide-x divide-gray-200">
-          {/* The first button is for sending an email to the applicant */}
+          {/* The first button is for sending an email to the cats */}
           <div className="flex-1 flex group">
             {/* The button contains an email icon and the text "Email" */}
             <a
@@ -54,7 +54,7 @@ const Modal = ({ cat }) => {
               <span>Email</span>
             </a>
           </div>
-          {/* The second button is for calling the applicant's phone number */}
+          {/* The second button is for calling the cat's phone number */}
           <div className="flex-1 flex group">
             {/* The button contains a phone icon and the text "Call" */}
             <a
@@ -68,9 +68,9 @@ const Modal = ({ cat }) => {
               <span>Call</span>
             </a>
           </div>
-          {/* The third button is for visiting the applicant's LinkedIn profile */}
+          {/* The third button is for visiting the cat's Instagram profile */}
           <div className="flex-1 flex group">
-            {/* The button contains a LinkedIn icon and the text "LinkedIn" */}
+            {/* The button contains a Instagram icon and the text "Instagram" */}
             <a
               href={`instagram.com/`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
