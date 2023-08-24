@@ -37,7 +37,7 @@ This project focuses on creating profile card sections for various anime charact
 
 ## Deployment
 
-The project has been deployed on Vercel. You can access the profile card collection using the following link: [Anime Profile Cards](https://profile-card-five-liard.vercel.app/)
+The project has been deployed on Vercel. You can access the profile card collection using the following link: [Cat profile card](https://profile-card-five-liard.vercel.app/)
 
 Feel free to explore the profiles of different anime characters and enjoy the world of anime!
 
@@ -70,6 +70,6 @@ This project focuses on creating profile card sections for various anime charact
 
 ## Deployment
 
-The project has been deployed on Vercel. You can access the profile card collection using the following link: [Anime Profile Cards](https://profile-card-five-liard.vercel.app/)
+The project has been deployed on Vercel. You can access the profile card collection using the following link: [Cat Profile Cards](https://profile-card-five-liard.vercel.app/)
 
 
