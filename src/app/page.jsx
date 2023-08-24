@@ -7,7 +7,7 @@ export default function Example() {
   const [selectedCat, setSelectedCat] = useState([]);
   const [catData, setCatData] = useState([]); // Initialize cat data as an empty array
 
-  // Fetch cat data from your API when the component mounts
+  // Fetch cat data from the API when the component mounts
   useEffect(() => {
     async function fetchCatData() {
       try {
@@ -15,8 +15,7 @@ export default function Example() {
           "https://api.api-ninjas.com/v1/cats?shedding=4",
           {
             headers: {
-              "X-Api-Key": "erDzKHY8fLx2SKFDbWa+3w==Sv2pL22KzSpMFU0x", // Replace with your actual API key
-            },
+              "X-Api-Key": "erDzKHY8fLx2SKFDbWa+3w==Sv2pL22KzSpMFU0x", 
           }
         );
         if (!response.ok) {

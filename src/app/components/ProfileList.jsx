@@ -14,7 +14,7 @@ const ProfileList = ({ selectedCat, catData, handleCatClick }) => {
           {/* Mapping each cat to a list item */}
           {catData.map((cat, index) => (
             <li
-              key={index} // Use the index as the key
+              key={index} // Using the index as the key
               className={`block cursor-pointer hover:bg-gray-200 ${
                 selectedCat === cat ? "bg-gray-300" : ""
               }`}
@@ -28,7 +28,7 @@ const ProfileList = ({ selectedCat, catData, handleCatClick }) => {
                     <div>
                       <img
                         className={`h-12 w-12 rounded-full shadow-md object-cover`}
-                        src={cat.image_link} // Assuming the cat data has an 'image_url' property
+                        src={cat.image_link} 
                         alt=""
                       />
                     </div>
@@ -37,13 +37,13 @@ const ProfileList = ({ selectedCat, catData, handleCatClick }) => {
                       <div>
                         <p className="text-sm font-medium text-indigo-600 truncate">
                           {cat.name}{" "}
-                          {/* Assuming the cat data has a 'name' property */}
+                          {/*  the cat data has a 'name' property */}
                         </p>
                         <p className="mt-2 flex items-center text-sm text-gray-500">
-                          {/* <MailIcon
+                        / <MailIcon
                             className="mr-1.5 h-5 w-5 text-gray-400"
                             aria-hidden="true"
-                          /> */}
+                          /> 
                           <span className="truncate">
                             {nameToEmail(cat.name)}
                           </span>
