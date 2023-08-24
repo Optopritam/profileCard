@@ -1,7 +1,7 @@
 "use client";
 import { MailIcon } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
-import ProfileList from "./components/profileList";
+import ProfileList from "./components/ProfileList";
 
 export default function Example() {
   const [selectedCat, setSelectedCat] = useState([]);
