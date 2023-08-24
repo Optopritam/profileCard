@@ -1,38 +1,38 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
+import application from "./application";
 
 // This is a Modal component that takes in an application object as a prop
-const Modal = ({ application }) => {
+const Modal = ({ cat }) => {
   return (
     /* The modal is a flex container with a column direction and a fixed width */
     <div
-      key={application.applicant.email}
-      className={`animate-fade-in flex flex-col w-80 md:w-96 md:h-104 border text-center bg-white rounded-2xl divide-y divide-gray-200`}
+      className={`animate-fade-in flex flex-col md:w-96 md:h-104 border text-center bg-white rounded-2xl divide-y divide-gray-200`}
     >
       {/* The top part of the modal contains the applicant's image, name, bio, title, and role */}
       <div className="flex-1 flex flex-col p-8">
         {/* The applicant's image is displayed as a circle with a shadow effect */}
         <img
-          className={`w-32 h-32 mx-auto rounded-full shadow-xl ${application.imageClass}`}
-          src={application.applicant.imageUrl}
+          className={`w-32 h-32 mx-auto rounded-full shadow-xl object-cover `}
+          src={cat.image_link}
           alt=""
         />
         {/* The applicant's name is displayed below the image in a larger font size */}
         <h3 className="mt-8 md:mt-12 text-gray-900 font-semibold text-lg">
-          {application.applicant.name}
+          {cat.name}
         </h3>
         {/* The applicant's bio is displayed below their name in a smaller font size */}
-        <p className="text-sm mt-1">{application.applicant.bio}</p>
+        <p className="text-sm mt-1 flex-col">Shedding: {cat.shedding}, General_health: {cat.general_health}, Playfulness: {cat.playfulness} </p>
         {/* The application title and role are displayed in a definition list */}
         <dl className="mt-1 flex flex-col justify-between">
-          <dt className="sr-only">Title</dt>
-          <dd className="text-gray-500 text-sm">{application.title}</dd>
+          <dt className="sr-only">Origin</dt>
+          <dd className="text-gray-500 text-sm">{cat.origin}</dd>
           <dt className="sr-only">Role</dt>
           <dd className="mt-3">
             {/* The role is displayed inside a badge with a background color that depends on the role */}
             <span
               className={`inline-flex items-center rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset ${application.badgeClass}`}
             >
-              {application.role}
+              Length:  {cat.length}
             </span>
           </dd>
         </dl>
@@ -45,7 +45,7 @@ const Modal = ({ application }) => {
           <div className="flex-1 flex group">
             {/* The button contains an email icon and the text "Email" */}
             <a
-              href={`mailto:${application.applicant.email}`}
+              // href={`mailto:{cat.name}@gmail.com`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
             >
               <MailIcon
@@ -59,7 +59,7 @@ const Modal = ({ application }) => {
           <div className="flex-1 flex group">
             {/* The button contains a phone icon and the text "Call" */}
             <a
-              href={`tel:${application.applicant.telephone}`}
+              href={`tel:`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
             >
               <PhoneIcon
@@ -73,11 +73,11 @@ const Modal = ({ application }) => {
           <div className="flex-1 flex group">
             {/* The button contains a LinkedIn icon and the text "LinkedIn" */}
             <a
-              href={`linkedin.com/${application.applicant.linkedin}`}
+              href={`linkedin.com/`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
             >
-              <i className="ci ci-linkedin ci-lg transition-transform duration-300 transform-gpu group-hover:scale-125"></i>
-              <span>Linkedin</span>
+              <i className="ci ci-instagram ci-lg transition-transform duration-300 transform-gpu group-hover:scale-125"></i>
+              <span>Instagram</span>
             </a>
           </div>
         </div>
