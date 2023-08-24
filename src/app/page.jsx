@@ -37,14 +37,16 @@ export default function Example() {
   const handleCatClick = (cat) => {
     setSelectedCat(cat);
   };
-   console.log(catData);
-  
-   return(
-  
+
+  if (catData.length === 0) {
+    return <div className="text-white text-center mt-10">Loading...</div>;
+  }
+
+  return (
     <ProfileList
-    selectedCat={selectedCat}
-    catData={catData}
-    handleCatClick={handleCatClick}
-  />
-   );
+      selectedCat={selectedCat}
+      catData={catData}
+      handleCatClick={handleCatClick}
+    />
+  );
 }

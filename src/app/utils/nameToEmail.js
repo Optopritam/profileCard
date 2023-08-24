@@ -1,11 +1,13 @@
 const nameToEmail = (name) => {
-  console.log("name", name);
+  if (!name) {
+    return "";
+  }
   return `${
     name
       .toLowerCase()
       .split(" ")
       .join(".")
-    }@trybe.com`;
+    }@cat.com`;
 };
 
-export default nameToEmail;
+export default nameToEmail;

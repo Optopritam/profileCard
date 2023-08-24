@@ -1,6 +1,5 @@
 import { MailIcon, PhoneIcon } from "@heroicons/react/solid";
-import application from "./application";
-
+import nameToEmail from "../utils/nameToEmail";
 // This is a Modal component that takes in an application object as a prop
 const Modal = ({ cat }) => {
   return (
@@ -30,9 +29,9 @@ const Modal = ({ cat }) => {
           <dd className="mt-3">
             {/* The role is displayed inside a badge with a background color that depends on the role */}
             <span
-              className={`inline-flex items-center rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset ${application.badgeClass}`}
+              className={`inline-flex items-center rounded-md px-2 py-1 text-sm font-medium ring-1 ring-inset`}
             >
-              Length:  {cat.length}
+              Length: {cat.length}
             </span>
           </dd>
         </dl>
@@ -45,7 +44,7 @@ const Modal = ({ cat }) => {
           <div className="flex-1 flex group">
             {/* The button contains an email icon and the text "Email" */}
             <a
-              // href={`mailto:{cat.name}@gmail.com`}
+              href={`mailto:${nameToEmail(cat.name)}`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
             >
               <MailIcon
@@ -73,7 +72,7 @@ const Modal = ({ cat }) => {
           <div className="flex-1 flex group">
             {/* The button contains a LinkedIn icon and the text "LinkedIn" */}
             <a
-              href={`linkedin.com/`}
+              href={`instagram.com/`}
               className="gap-2 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
             >
               <i className="ci ci-instagram ci-lg transition-transform duration-300 transform-gpu group-hover:scale-125"></i>
