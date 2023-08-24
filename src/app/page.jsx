@@ -17,14 +17,20 @@ export default function Example() {
             headers: {
               "X-Api-Key": "erDzKHY8fLx2SKFDbWa+3w==Sv2pL22KzSpMFU0x", 
           }
+        }
         );
+
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
+
         const data = await response.json();
+
         setCatData(data);
+
         setSelectedCat(data[0]); // Set the selected cat to the first cat in the data
-      } catch (error) {
+         } 
+      catch (error) {
         console.error("Error fetching cat data:", error);
       }
     }
